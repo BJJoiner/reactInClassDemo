@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
 import './App.css';
 import TaskList from './TaskList';
@@ -21,13 +22,13 @@ class App extends Component {
                     <input
                         type='text'
                         className='input'
-                        placeholder='Enter Todo Item'
+                        placeholder='Enter Item'
                         value={this.state.task}
                         onChange={(e) => this.setState({task: e.target.value})}
                     />
-                    <button type='submit'>Add Todo</button>
+                    <button type='submit'>Add</button>
                 </form>
-                <TaskList title={'Pending Todo'} buttonText={'Done'} tasks={this.state.todoList} buttonFunction={this.removeTodo} />
+                <TaskList title={'Pending'} buttonText={'Done'} tasks={this.state.todoList} buttonFunction={this.removeTodo} />
                 <TaskList title={'Completed'} buttonText={"Delete"} tasks={this.state.deleteList} buttonFunction={this.deleteTodo} />
             </div>
         );

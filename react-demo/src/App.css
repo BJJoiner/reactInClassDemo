@@ -1,6 +1,9 @@
-.App {
+.App { 
+  font-family: Comic Sans MS, Comic Sans, cursive;  
+  color: white;
   text-align: center;
-}
+  margin-top: 150px;
+} 
 
 .App-logo {
   height: 40vmin;
